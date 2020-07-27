@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+<title>looping statements</title>
+</head>
+<body>
+<button onclick="myFunction1()">while</button>
+<button onclick="myFunction2()">do..while</button>
+<button onclick="myFunction3()">for</button>
+<p id="demo"></p>
+<script>
+function myFunction1(){
+   var i=1;
+    var txt="";
+while(i<100){
+    txt=txt+i+"<br>";
+    i=i+2;
+}
+document.getElementById('demo').innerHTML=txt;
+}
+function myFunction2(){
+   var i=1;
+    var txt="";
+do{
+    txt=txt+i+"<br>";
+    i=i+2;
+}while(i<100);
+document.getElementById('demo').innerHTML=txt;
+}
+function myFunction3(){
+   for(var i=1,txt="";i<100;i=i+2){
+txt=txt+i+"<br>";
+}
+document.getElementById('demo').innerHTML=txt;
+}
+</script>
+</body>
+</html>
